@@ -60,4 +60,67 @@ quiz 2
     alert("external js is working")
   } 
     *******************************
-     */
+     
+
+
+-----------data types:string--------
+let name="Mariyam salman"
+console.log(name)
+console.log(typeof(name))
+
+--------number-------
+let num=10
+console.log(num)
+console.log(typeof(num))
+
+------boolean-----
+let bool=true
+console.log(bool)
+console.log(typeof(bool))
+
+-------undefined--------
+let a
+console.log(typeof(a))
+
+-------null------
+let b=null
+console.log(typeof(b))
+
+----symbol------
+let key=Symbol("id")
+let key1=Symbol("id")
+if(key!=key1){
+console.log(true)
+} 
+
+----big int------
+let num1=200000n
+console.log(typeof(num1)) 
+
+----object--------
+let obj={name:"sara",age:12,height:5.3,weight:30};
+console.log(obj.age)
+console.log(typeof(obj))
+
+----array-------
+let names=["Sara","ali","Mariyam","omaima"]
+console.log(names)
+
+----function------
+function info(){
+    return true
+}
+let value=info()
+console.log(value)
+
+-------primitve vs refrence------
+let x=10
+y=x
+y=20
+console.log(x)
+
+let obj1={a:1}
+obj2=obj1
+obj2.a=2
+console.log(obj1)
+*/
