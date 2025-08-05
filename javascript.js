@@ -123,4 +123,93 @@ let obj1={a:1}
 obj2=obj1
 obj2.a=2
 console.log(obj1)
+
+------Arithematic operators-------
+let x=2
+let y=3
+console.log(x+y)
+console.log(x-y)
+console.log(x*y)
+console.log(x/y)
+console.log(2**3)
+console.log(x**y)
+console.log(6%2)
+x=6
+y=2
+console.log(x%y)
+
+--------increament & decreament operator-----
+x=8
+console.log(++x)
+console.log(x++)
+console.log(x)
+
+x=8
+console.log(--x)
+console.log(x--)
+console.log(x)
+
+-------ternary operator-------
+let age=19
+let result=(age>=18)?"you can vote":"you can not vote"
+console.log(result)
+
+-------comparision operator-----
+x=6
+y=7
+console.log(x=y)
+x=6
+y=7
+console.log(x+=y)
+x=6
+ y=7
+console.log(x=x+y)
+
+x=6
+ y=7
+ console.log(x=x-y)
+ x=6
+ y=7
+console.log(x-=y)
+x=6
+ y=7
+ console.log(x=x*y)
+ x=6
+ y=7
+console.log(x*=y)
+x=6
+ y=7
+ console.log(x=x/y)
+ x=6
+ y=7
+console.log(x/=y)
+x=6
+ y=7
+ console.log(x=x**y)
+ x=6
+ y=7
+console.log(x**=y)
+
+------practise set 5-------
+Q2:
+let num1=20
+let num2=4
+console.log(num1+num2)
+console.log(num1-num2)
+console.log(num1/num2)
+console.log(num1*num2)
+console.log(num1%num2)
+console.log(num1**num2)
+Q3:
+let  marks=85
+let passingmarks=40
+if(marks>=passingmarks){
+  console.log("student has passed the exam")
+}
+if(marks>80&&marks<100){
+  console.log("your grade is A")
+}
+if(marks!=100){
+  console.log("you were not able to achieve full marks")
+}
 */
