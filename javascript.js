@@ -213,3 +213,59 @@ if(marks!=100){
   console.log("you were not able to achieve full marks")
 }
 */
+//length
+
+let name="mariyam Salman"
+console.log(name.length)
+
+//toUpperCase()
+let name1="mariyam Salman"
+console.log(name.toUpperCase())
+//toLowerCase()
+let name2="MARIYAM SALMAN"
+console.log(name2.toLowerCase())
+
+//includes
+let text="I am learning javascript"
+console.log(text.includes("javascript"))
+
+//indexof()&lastindexof()
+
+let fruit="banana"
+console.log(fruit.lastIndexOf("a"))
+
+//charAt()
+let fruit1="ba1ana"
+console.log(fruit1.charAt(2))
+
+//slice(start,end)
+
+let string2="Lavender"
+console.log(string2.slice(2))
+
+//substring(start,end)
+
+let string3="Lavender"
+console.log(string3.substring(1,5))
+
+//replace()
+let text1="I am learning javascript"
+console.log(text.replace("javascript","python"))
+
+//trim()
+let string4="    mariyam salman   "
+console.log(string4.trim())
+
+//concat()
+let name4="mariyam"
+let name5="omaima"
+console.log(name4.concat(" ",name5))
+
+//split()
+let fruits="apple,mango,banana,strawberry"
+console.log(fruits.split(","))
+
+
+
+
+ 
