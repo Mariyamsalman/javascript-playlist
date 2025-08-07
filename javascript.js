@@ -265,7 +265,7 @@ console.log(name4.concat(" ",name5))
 //split()
 let fruits="apple,mango,banana,strawberry"
 console.log(fruits.split(","))
-*/
+
 
 //Math.round()
 let y=3.6
@@ -303,7 +303,13 @@ console.log(Math.abs(x))
 
 //Math.pi
 console.log(Math.PI)
-
+*/
+let email
+if(email){
+console.log("if block is running")
+}else{
+console.log("else block is running")
+}
 
 
  
