@@ -212,7 +212,8 @@ if(marks>80&&marks<100){
 if(marks!=100){
   console.log("you were not able to achieve full marks")
 }
-*/
+
+
 //length
 
 let name="mariyam Salman"
@@ -264,7 +265,44 @@ console.log(name4.concat(" ",name5))
 //split()
 let fruits="apple,mango,banana,strawberry"
 console.log(fruits.split(","))
+*/
 
+//Math.round()
+let y=3.6
+console.log(Math.round(y))
+
+//Math.floor()
+console.log(Math.floor(y))
+
+//Math.ceil()
+console.log(Math.ceil(y))
+
+//Math.trunc()
+console.log(Math.trunc(y))
+
+
+//Math.max()
+console.log(Math.max(2,7,9,10,11))
+
+//Math.max()
+console.log(Math.min(2,7,9,10,11))
+
+//Math.sqrt()
+console.log(Math.sqrt(y))
+
+//Math.pow()
+console.log(Math.pow(2,3))
+
+//Math.random()
+console.log(Math.random())
+console.log(Math.random())
+
+//Math.abs
+let x=-6.72
+console.log(Math.abs(x))
+
+//Math.pi
+console.log(Math.PI)
 
 
 
