@@ -303,7 +303,7 @@ console.log(Math.abs(x))
 
 //Math.pi
 console.log(Math.PI)
-*/
+-----Booleans &truthy and falsy vales------
 let email
 if(email){
 console.log("if block is running")
@@ -311,5 +311,25 @@ console.log("if block is running")
 console.log("else block is running")
 }
 
+let value="hello"
+value=Boolean(value)
+console.log(value)
+console.log(typeof(value))
 
- 
+
+------type conversions and type coercions----
+//+ = 1 operand string so it converts the second operand in string
+//-,*,/= 1 operand number so it converts the second operand in number,it tries to convert other data types in number.
+
+let answer="2" + true
+console.log(answer)
+console.log(typeof(answer))
+
+if(0==false){
+ console.log("true")
+}else{
+   console.log("false")
+}
+   */
+
+
