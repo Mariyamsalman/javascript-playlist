@@ -330,6 +330,119 @@ if(0==false){
 }else{
    console.log("false")
 }
-   */
 
 
+******************************************
+//if statement
+let age=10
+if(age>=18){
+  console.log("you are elligible to vote")
+}
+
+  //if else statement
+let age=10
+if(age>=18){
+  console.log("you are elligible to vote")
+}else{
+  console.log("you are not elligible to vote")
+}
+
+//if else if statement
+
+let marks=56;
+
+if(marks>=80&&marks<=100){
+  console.log("your grade is A1")
+}else if(marks>=70&&marks<80){
+  console.log("your grade is A")
+}else if(marks>=60&&marks<70){
+  console.log("your grade is B")
+}else if(marks>=50&&marks<60){
+  console.log("your grade is C")
+}else{
+  console.log("your grade is F")
+}
+
+//switch statement
+let optionselectedbyuser=4
+
+switch(optionselectedbyuser){
+case 1 :{
+console.log("pizza will be served")
+  break;
+}
+case 2 :{
+console.log("burger will be served")
+  break;
+}
+
+case 3 :{
+console.log("sandwich will be served")
+  break;
+}
+
+default:
+{
+  console.log("your selected option is not available")
+}
+
+}
+*************************
+Q1
+let age=10
+if(age>18){
+  console.log("you can vote")
+}else{
+  console.log("you can not vote")
+}
+
+Q2
+let temperature=2
+if(temperature>30){
+  console.log("it is hot")
+}else if(temperature>20){
+  console.log("it is warm")
+}else{
+  console.log("it is cold")
+}
+  
+Q3
+let number=4
+
+switch(number){
+case 1 :{
+console.log("Monday")
+  break;
+}
+case 2 :{
+console.log("tuesday")
+  break;
+}
+case 3 :{
+console.log("wednesday")
+  break;
+}
+case 4 :{
+console.log("thursday")
+  break;
+}
+case 5 :{
+console.log("friday")
+  break;
+}
+case 6 :{
+console.log("saturday")
+  break;
+}
+case 7 :{
+console.log("sunday")
+  break;
+}
+
+default:
+{
+  console.log("your selected option is not appropriate")
+}
+
+}
+*/
