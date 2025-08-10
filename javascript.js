@@ -405,7 +405,7 @@ if(temperature>30){
 }else{
   console.log("it is cold")
 }
-  
+
 Q3
 let number=4
 
@@ -445,4 +445,58 @@ default:
 }
 
 }
+******************************************
+//for loop
+for(a=1;a<=10;a++){
+console.log("2 * "+a+"="+2*a)
+}
+
+//while loop
+let number=1
+
+while(number!=0){
+
+console.log("user dont want to terminate the program")
+number=prompt("enter a number,and press 0 to terminate")
+
+}
+console.log("user terminated the program")
+
+
+//do while loop
+let number
+
+do{
+console.log("user dont want to terminate the program")
+number=prompt("enter a number,and press 0 to terminate")
+
+}while(number!=0)
+console.log("user terminated the program")
+
+Q1
+
+for(a=1;a<=10;a++){
+console.log(a)
+}
+
+Q2
+
+let number=1
+let sum=0
+while(number<=5){
+
+sum+=number
+number++
+}
+console.log(sum)
+
+Q3
+let number
+
+do{
+console.log("you have not guessed the number")
+number=prompt("enter a number")
+
+}while(number!=7)
+console.log("you have guessed the number right")
 */
