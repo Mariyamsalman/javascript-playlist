@@ -499,4 +499,25 @@ number=prompt("enter a number")
 
 }while(number!=7)
 console.log("you have guessed the number right")
+**************************************
+
+//Break statement
+let names=["ali","sara","hiba","Mariyam"]
+let Search="hiba"
+for(a=0;a<=3;a++){
+if(names[a]==Search){
+  console.log("the name "+names[a]+" has been found on"+a)
+  break;
+}
+}
+
+//continue statment
+
+for(i=1;i<=10;i++){
+if(i%2!=0){
+  continue
+}else{
+console.log(i)
+}
+}
 */
