@@ -567,3 +567,14 @@ let cube=function(a){
 console.log(square(3))
 console.log(cube(3))
 */
+
+//Arrow function
+//with parameter but single line of code wo without braces
+let arrowfunc=name=>console.log("my name is "+name)
+ 
+arrowfunc("Mariyam")
+
+//without parameters and return , with a single line of code
+let arrowfunc1=()=>console.log("my name is Mariyam")
+ 
+arrowfunc1()
