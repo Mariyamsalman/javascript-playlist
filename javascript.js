@@ -387,7 +387,7 @@ default:
 }
 
 }
-*************************
+
 Q1
 let age=10
 if(age>18){
@@ -520,4 +520,50 @@ if(i%2!=0){
 console.log(i)
 }
 }
+************************************
+
+//function declaration
+function info(a,b){
+  console.log("my name is "+a)
+  console.log("my age is "+b)
+}
+
+let x=prompt("write your name")
+let y=prompt("write your age")
+
+info(x,y);
+
+
+//function Expression
+
+let addition=function(a,b){
+  return a+b
+};
+console.log(addition(2,3))
+
+Q1
+
+function greetuser(a){
+  console.log("the user's name is"+a)
+}
+
+greetuser("Mariyam")
+greetuser("Omaima")
+
+Q2
+let multiply=function(a,b){
+  return a*b
+};
+
+console.log(multiply(2,3))
+
+Q3
+function square(a){
+  return a*a
+}
+let cube=function(a){
+  return a*a*a
+}
+console.log(square(3))
+console.log(cube(3))
 */
