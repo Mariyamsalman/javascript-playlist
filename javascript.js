@@ -566,8 +566,8 @@ let cube=function(a){
 }
 console.log(square(3))
 console.log(cube(3))
-*/
 
+*****************************************
 //Arrow function
 //with parameter but single line of code wo without braces
 let arrowfunc=name=>console.log("my name is "+name)
@@ -578,3 +578,23 @@ arrowfunc("Mariyam")
 let arrowfunc1=()=>console.log("my name is Mariyam")
  
 arrowfunc1()
+
+******************************
+
+//parameter argument
+function func(age,name,height,weight){
+console.log("my age is "+age)
+console.log("my name is "+name)
+console.log("my height is "+height)
+console.log("my weight is "+weight)
+}
+
+func(18,"Mariyam",2,20)
+*/
+//return
+function add(a,b){
+return a+b
+
+}
+let sum=add(2,3)
+console.log(sum)
