@@ -678,16 +678,48 @@ var1()
 var var1=function(){
   console.log("hello")
 };
+
+//array:
+
+//pop()
+let name=["mariyam","omaima","sufiyan","saad","basim"]
+
+console.log(name.pop())
+console.log(name)
+
+//push()
+let name=["mariyam","omaima","sufiyan","saad","basim"]
+console.log(name)
+name.push("hiba")
+console.log(name)
+
+
+//shift()
+
+let name=["mariyam","omaima","sufiyan","saad","basim"]
+console.log(name)
+name.shift()
+console.log(name)
+
+//unshift()
+
+let name=["mariyam","omaima","sufiyan","saad","basim"]
+console.log(name)
+name.unshift("sara")
+console.log(name)
+
+//includes()
+
+let name=["mariyam","omaima","sufiyan","saad","basim"]
+console.log(name.includes("omaima"))
+
+//indexof()&lastIndexOf()
+
+let name=["mariyam","omaima","sufiyan","saad","basim","omaima"]
+console.log(name.lastIndexOf("omaima"))
+ 
+console.log(name.reverse())
+
+let numbers=[5,4,3,2,1]
+console.log(numbers.sort())
 */
-
-
-
-
-
-
-
-
-
-
-
-
