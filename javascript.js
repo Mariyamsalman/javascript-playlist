@@ -590,7 +590,7 @@ console.log("my weight is "+weight)
 }
 
 func(18,"Mariyam",2,20)
-*/
+
 //return
 function add(a,b){
 return a+b
@@ -598,3 +598,52 @@ return a+b
 }
 let sum=add(2,3)
 console.log(sum)
+
+
+//global scope
+
+
+let variable="i am accessible throughout the script"
+
+function square(a){
+  variable="i have changed it"
+  console.log(variable)
+  return a*a
+}
+
+for(a=1;a<=3;a++){
+console.log(a)
+  console.log(variable)
+}
+  console.log(variable)
+  square(3)
+
+
+  //function scope
+
+function square(b){
+  let funcscopedvariable="i am accessible inside the function"
+  console.log(funcscopedvariable)
+
+for(a=1;a<=3;a++){
+console.log(a)
+ console.log(funcscopedvariable)
+}
+  return b*b
+}
+ square(3)
+  console.log(funcscopedvariable)
+*/
+  //block scope
+
+for(a=1;a<=3;a++){
+  let blockscopedvariable="hello"
+    const blockscopedvariable1="hello"
+    var blockscopedvariable2="hello1"
+console.log(a)
+console.log(blockscopedvariable)
+}
+console.log(blockscopedvariable2)
+console.log(blockscopedvariable)
+
+console.log(blockscopedvariable1)
