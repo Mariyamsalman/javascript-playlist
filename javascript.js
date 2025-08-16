@@ -633,8 +633,8 @@ console.log(a)
 }
  square(3)
   console.log(funcscopedvariable)
-*/
-  //block scope
+
+//block scope
 
 for(a=1;a<=3;a++){
   let blockscopedvariable="hello"
@@ -647,3 +647,47 @@ console.log(blockscopedvariable2)
 console.log(blockscopedvariable)
 
 console.log(blockscopedvariable1)
+
+*****************************
+//hoisting in variables
+//var 
+console.log(variable)
+var variable=10
+console.log(variable)
+
+
+//let & const
+console.log(variable)
+console.log(variable1)
+
+let variable=20
+const variable1=20
+
+//hoisting in functions
+
+//function declaration
+function1()
+function function1(){
+  console.log("hello")
+}
+function1()
+
+
+//function expression
+var1()
+var var1=function(){
+  console.log("hello")
+};
+*/
+
+
+
+
+
+
+
+
+
+
+
+
