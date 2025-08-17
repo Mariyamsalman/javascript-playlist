@@ -722,4 +722,60 @@ console.log(name.reverse())
 
 let numbers=[5,4,3,2,1]
 console.log(numbers.sort())
+**************************************************
+
+//looping thorugh arrays
+
+//for loop
+
+let name=["mariyam","omaima","sufiyan","saad","basim","omaima"]
+for(i=0;i<=5;i++){
+if(name[i]=="omaima"){
+  console.log("omaima was there on index"+i)
+  break
+} 
+
+}
+
+//forEach()
+let name=["mariyam","omaima","sufiyan","saad","basim","omaima"]
+name.forEach(function(values,indexes,array){
+console.log(values+" and index: "+indexes)
+console.log(array)
+});
+// same with arrowfunction
+let name=["mariyam","omaima","sufiyan","saad","basim","omaima"]
+name.forEach((values,indexes,array)=>console.log(values+" and index: "+indexes));
+
+
+//map()
+let numbers=[1,2,3,4,5]
+let variable=numbers.map(function(elements){
+
+return elements*elements
+})
+console.log(variable)
+console.log(numbers)
+
+q1
+let fruits=["mango","apple","kiwi"]
+fruits.push("banana")
+fruits.shift()
+console.log(fruits)
+
+q2
+let numbers = [10, 20, 30, 40, 50]
+
+for(i=0;i<=4;i++){
+
+  console.log(numbers[i])
+}
+
+numbers.forEach((elements)=>console.log(elements))
+
+q3
+let marks = [45, 67, 32, 89, 76]; 
+newmarks=marks.map((elements)=>elements+5)
+console.log(newmarks)
+
 */
