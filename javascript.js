@@ -778,7 +778,7 @@ let marks = [45, 67, 32, 89, 76];
 newmarks=marks.map((elements)=>elements+5)
 console.log(newmarks)
 
-
+*********************************
 //object literal
 let person={
   name:"Mariyam",
@@ -803,5 +803,27 @@ person.age=19
 
 console.log(person)
 
-*****************
+***********************************
+
+//object method &this keyword
+
+function func(){
+    console.log("hi I'm "+this.name)
+  }
+
+let person={
+  name:"Mariyam",
+  age:18,
+  height:3.6,
+  intro:func
+};
+let person1={
+  name:"omaima",
+  age:18,
+  height:3.6,
+  intro:func
+};
+person.intro()
+person1.intro()
 */
+
