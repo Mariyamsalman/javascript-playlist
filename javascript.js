@@ -778,4 +778,30 @@ let marks = [45, 67, 32, 89, 76];
 newmarks=marks.map((elements)=>elements+5)
 console.log(newmarks)
 
+
+//object literal
+let person={
+  name:"Mariyam",
+  age:18,
+  height:3.6
+};
+
+//dot notation
+console.log(person.name)
+
+//bracket notation
+console.log(person["height"])
+
+//add
+person.weight=32
+
+//delete
+delete person.height
+
+//update
+person.age=19
+
+console.log(person)
+
+*****************
 */
