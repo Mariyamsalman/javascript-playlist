@@ -825,5 +825,55 @@ let person1={
 };
 person.intro()
 person1.intro()
-*/
+*******************
+//nested objects
+let person={
+  name:"Mariyam",
+  age:18,
+  subject:{
+    maths:20,
+    english:30
+  },
+  height:3.6,
+};
+console.log(person.name)
+console.log(person.subject.maths)
 
+//looping through objects
+//for in loop
+let person={
+  name:"Mariyam",
+  age:18,
+  height:3.6,
+
+};
+for(let key in person){
+  console.log(key +":"+person[key])//key:name,person[key]:"Mariyam"
+}
+
+//object.keys()
+let person={
+  name:"Mariyam",
+  age:18,
+  height:3.6,
+
+};
+let keys=Object.keys(person)
+console.log(keys)
+
+Object.keys(person).forEach(function (keys){
+  console.log(keys +":"+person[keys])//keys:name,person[keys]:"Mariyam"
+
+})
+//object.values()
+
+Object.values(person).forEach(function (values){
+  console.log(values)
+
+})
+//object.entries()
+Object.entries(person).forEach(function ([key ,value]){
+  console.log(key +":"+value)
+
+})
+  */
