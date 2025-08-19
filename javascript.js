@@ -876,4 +876,75 @@ Object.entries(person).forEach(function ([key ,value]){
   console.log(key +":"+value)
 
 })
-  */
+
+//destructuring arrays & objects
+
+//in array
+let array=["apple","banana","kiwi"]
+
+let [a,b,c,d="strawberry"]=array   //with default value
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+
+ //skipping values
+ let [a,,c]=array
+ console.log(a)
+
+console.log(c)
+
+
+//in objects
+let person={
+  name:"Mariyam",
+  age:18,
+  height:3.6,
+
+};
+let {name:newname,age:newage,height:newheight,country="pakistan"}=person //with assigning new names to variables and default value
+console.log(newname)
+console.log(newage)
+console.log(newheight)
+console.log(country)
+  
+//nested destructuring
+
+ let person={
+  name:"Mariyam",
+  age:18,
+  subject:{
+    maths:20,
+    english:30
+  },
+  height:3.6,
+};
+let {name,age,subject:{maths,english},height,country="pakistan"}=person 
+console.log(name)
+console.log(age)
+console.log(maths)
+console.log(english)
+console.log(height)
+console.log(country)
+  
+
+//q1
+let car={
+brand:"toyota",
+year:"2020",
+method:function getinfo(){
+console.log("this car is "+this.brand+ " from year "+this.year)
+}
+}
+car.method()
+//Q2
+let student = { 
+  name: "Ali", 
+  age: 22, 
+  address: { 
+    city: "Lahore", 
+    zip: 54000  }}; 
+    let {address:{city}}=student
+    console.log(city)
+    */
+
