@@ -971,6 +971,12 @@ function1("omaima","mariyam","ali")
 let array=["apple","banana","kiwi"]
 let [a,...restop2]=array
 console.log(restop2)
+
+****************************************************
+let variable=10
+console.log("i am "+variable+" years old ")
+console.log(`i am ${variable} years old`)
+ let string1=`i am "mariyam" ' ''`
+let x = 5, y = 10; 
+console.log(`Sum = ${x + y}`); 
 */
-
-
