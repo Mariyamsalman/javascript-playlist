@@ -946,5 +946,31 @@ let student = {
     zip: 54000  }}; 
     let {address:{city}}=student
     console.log(city)
-    */
+    
+********************************
+//spread operator
+let array=["apple","banana","kiwi"]
+let array1=[10,20,30]
+let combined=[...array,...array1]
+console.log(combined)
+
+let a=function function1(a,b){
+  return a+b
+}
+array=[20,30]
+console.log(a(...array))
+
+
+//rest operator
+function function1(...restop){
+ for(let name of restop){
+  console.log(name)
+ }
+}
+function1("omaima","mariyam","ali")
+let array=["apple","banana","kiwi"]
+let [a,...restop2]=array
+console.log(restop2)
+*/
+
 
