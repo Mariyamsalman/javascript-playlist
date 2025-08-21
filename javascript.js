@@ -1000,4 +1000,28 @@ date1.setDate(22)
 20/8/2025
 us locale date
 8/20/2025
+
+//setTimeout()
+console.log("i am cooking")
+console.log("the food will be ready in 4 sec")
+
+setTimeout(function greet(){
+  console.log("the food is ready after 4 sec")
+},4000)
+
+//setInterval() with clearinterval()
+let count=0
+
+let id=setInterval(function message(){
+  console.log("dont forget to drink water")
+count++//1
+if(count>3){
+clearInterval(id)
+}
+
+},3000)
+
+setTimeout(function greet(){
+console.log("we are out of the function")
+},14000)
 */
