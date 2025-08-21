@@ -973,10 +973,31 @@ let [a,...restop2]=array
 console.log(restop2)
 
 ****************************************************
+//template literals
 let variable=10
 console.log("i am "+variable+" years old ")
 console.log(`i am ${variable} years old`)
  let string1=`i am "mariyam" ' ''`
 let x = 5, y = 10; 
 console.log(`Sum = ${x + y}`); 
+
+********************************
+//dates in js
+//specific dates
+let date=new Date("2026-01-1")
+console.log(date)
+
+//useful date methods
+let date1=new Date()
+console.log(date1.getFullYear())
+console.log(date1.getMonth())
+console.log(date1.getDay())
+console.log(date1.getDate())
+console.log(date1.getHours())
+console.log(date1.getSeconds())
+date1.setFullYear(2026)
+date1.setDate(22)
+20/8/2025
+us locale date
+8/20/2025
 */
