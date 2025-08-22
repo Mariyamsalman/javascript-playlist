@@ -1024,4 +1024,42 @@ clearInterval(id)
 setTimeout(function greet(){
 console.log("we are out of the function")
 },14000)
+
+****************************************
+
+//callback function
+//main function 
+function info(callback){
+  console.log("My name is mariyam")
+  callback()
+}
+//callback function
+function info2(){
+console.log("i am 10 years old")
+}
+//calling main func
+info(info2)
+
+console.log("start")
+setTimeout(function hello(){
+  console.log("hello after 2 seconds")
+},2000)
+let id=setInterval(function tick(){
+  console.log("tick")
+},1000)
+setTimeout(function(){
+  clearInterval(id)
+  console.log("function stopped")
+},5000)
 */
+let nums = [5, 10, 15, 20];
+let sum=0
+function practise(callback,...restop){
+for(i=0;i<=3;i++){
+sum=sum+restop[i]
+}
+callback(sum)
+} 
+practise(function callback(sum){
+console.log("this is the sum : "+sum)
+},...nums)
