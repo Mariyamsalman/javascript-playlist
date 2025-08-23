@@ -1040,6 +1040,7 @@ console.log("i am 10 years old")
 //calling main func
 info(info2)
 
+q1
 console.log("start")
 setTimeout(function hello(){
   console.log("hello after 2 seconds")
@@ -1051,7 +1052,8 @@ setTimeout(function(){
   clearInterval(id)
   console.log("function stopped")
 },5000)
-*/
+
+q2
 let nums = [5, 10, 15, 20];
 let sum=0
 function practise(callback,...restop){
@@ -1062,4 +1064,58 @@ callback(sum)
 } 
 practise(function callback(sum){
 console.log("this is the sum : "+sum)
-},...nums)
+},...nums)//synchronous programming
+
+//asynchronous programming
+console.log("i am cooking")
+setTimeout(function(){
+console.log("food is being cooked")
+},3000)
+console.log("i am washing the dishes")
+console.log("i am cleaning the kitchen")
+
+
+//promise
+let promise=new Promise((resolve,reject)=>{
+let pizza=false;
+
+if(pizza){
+  resolve("pizza will be served")
+}else{
+  reject("pizza will not be served")
+}
+
+});
+promise
+.then((msg)=>console.log("success:",msg))//fulfilled
+
+.catch((error)=>console.log("failure:",error))//rejected
+
+.finally(()=>console.log("the work has been done"))
+
+//callback hell
+setTimeout(()=>{
+  console.log("boil the pasta")
+setTimeout(()=>
+{
+  console.log("add sauce")
+  setTimeout(()=>{
+    console.log("serve the pasta")
+  },1000)
+},1000)
+},1000)
+
+ //same with promise
+function cooking(step,time){
+  return new Promise((resolve)=> {
+    setTimeout(()=>{
+      console.log(step)
+    },time)
+resolve()
+  })
+}
+cooking("boil water",1000)
+.then(()=>cooking("add pasta"),1000)
+.then(()=>cooking("add sauce"),1000)
+.then(()=>cooking("serve pasta"),1000)
+*/
