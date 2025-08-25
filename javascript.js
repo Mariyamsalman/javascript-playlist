@@ -1118,4 +1118,51 @@ cooking("boil water",1000)
 .then(()=>cooking("add pasta"),1000)
 .then(()=>cooking("add sauce"),1000)
 .then(()=>cooking("serve pasta"),1000)
+
+***************************************
+function getdata(){
+  return new Promise((resolve)=>{
+    setTimeout(()=>{
+resolve("data is received after two seconds")
+    },2000)
+  })
+}
+//promise example
+//getdata().then(result=>{
+//  console.log(result)
+  //console.log("done")
+//})
+
+//async await
+async function fetchdata(){
+  try{
+let result=await getdata()
+console.log(result)
+console.log("done")
+}catch(error){
+console.log("error caught:"+error)
+}finally{
+  console.log("task is completed")
+}
+}
+fetchdata()
+q2 & q3
+function delayedmessage(message,time){
+  return new Promise((resolve)=>{
+    setTimeout(()=>{
+      console.log(message)
+      resolve()
+    },time)
+    
+  })
+}
+
+//delayedmessage("Hello after 2s",2000)
+// .then(()=>
+// {console.log("done")})
+async function task(){
+  await delayedmessage("Hello after 2s",2000)
+  console.log("done")
+}
+task()
 */
