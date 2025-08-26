@@ -1166,3 +1166,14 @@ async function task(){
 }
 task()
 */
+//try catch
+try{
+  console.log("this line will not run")
+ throw "anything"
+  
+
+}catch(error){
+  console.log("this is the error:"+error)
+}
+
+  console.log("this is my first program")
