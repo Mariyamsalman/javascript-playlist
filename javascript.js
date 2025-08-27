@@ -1165,7 +1165,7 @@ async function task(){
   console.log("done")
 }
 task()
-*/
+
 //try catch
 try{
   console.log("this line will not run")
@@ -1175,5 +1175,25 @@ try{
 }catch(error){
   console.log("this is the error:"+error)
 }
-
+*****************************************
+//selecting DOM elements
+//getelementbyid
   console.log("this is my first program")
+
+let variable=document.getElementById("heading")
+console.log(variable.textContent)
+variable.textContent="it is changed"
+console.log(variable.textContent)
+//queryselectorall&queryselector
+let variable1=document.querySelectorAll(".class")
+console.log(variable1[1].textContent)
+
+  */
+
+
+
+
+
+
+
+
