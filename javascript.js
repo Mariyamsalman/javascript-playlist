@@ -1189,11 +1189,22 @@ let variable1=document.querySelectorAll(".class")
 console.log(variable1[1].textContent)
 
   */
-
-
-
-
-
+//click event
+let button=document.getElementById("btn")
+button.addEventListener("click",function(){
+  alert("button is clicked")
+})
+//input event
+let input=document.getElementById("input")
+input.addEventListener("input",function(){
+  alert("user has typed:"+input.value)
+})
+//submit event
+let submit=document.getElementById("form")
+form.addEventListener("submit",function(event){
+  event.preventDefault()
+  alert("form has been submitted")
+})
 
 
 
