@@ -1188,7 +1188,7 @@ console.log(variable.textContent)
 let variable1=document.querySelectorAll(".class")
 console.log(variable1[1].textContent)
 
-  */
+  
 //click event
 let button=document.getElementById("btn")
 button.addEventListener("click",function(){
@@ -1205,6 +1205,31 @@ form.addEventListener("submit",function(event){
   event.preventDefault()
   alert("form has been submitted")
 })
+******************************************************
+//manipulating DOM
+
+let button=document.getElementById("button")
+//button.classList.toggle("buttonclass1")
+console.log(button.classList.contains("buttonclass1"))
 
 
 
+//button.textContent="i am button"
+button.innerHTML="<i>I am button</i>"
+
+//button.style.backgroundColor="red"
+button.style.color="black"
+
+q2
+
+let heading=document.getElementById("heading")
+heading.textContent="hello world"
+
+q3
+let para=document.getElementById("para")
+let button=document.getElementById("btn")
+button.addEventListener("click",function(){
+  para.classList.add("highlight")
+  console.log(para.classList.contains("highlight"))
+})
+*/
