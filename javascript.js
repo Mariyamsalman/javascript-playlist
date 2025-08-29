@@ -1260,6 +1260,24 @@ console.log(location.pathname)
 */
 
 
+//dialog boxes
+//alert box
 
+//alert("you are online")
+
+//prompt box
+//let age=prompt("enter your age")
+
+//if(age){
+//  console.log("your age is: "+age)
+  //alert("you've entered something")
+//}else{
+//console.log("you've entered nothing")
+//}
+//confirm box
+let button =document.getElementById("btn")
+button.addEventListener("click",function(){
+  confirm("are you sure you want to exit")
+})
 
 
