@@ -1232,4 +1232,34 @@ button.addEventListener("click",function(){
   para.classList.add("highlight")
   console.log(para.classList.contains("highlight"))
 })
+************************************
+//Window, Navigator, Screen & Location Objects
+//window object property
+console.log(window.innerHeight)
+//window method
+//window.alert("i am mariyam")
+
+//navigator object
+
+console.log(navigator.userAgent)
+console.log(navigator.language)
+console.log(navigator.onLine)
+
+//screen object
+console.log(screen.height)
+console.log(screen.width)
+console.log(screen.availHeight)
+console.log(screen.availWidth)
+console.log(screen.colorDepth)
+
+//location object
+console.log(location.href)
+console.log(location.hostname)
+console.log(location.pathname)
+//location.reload()
 */
+
+
+
+
+
