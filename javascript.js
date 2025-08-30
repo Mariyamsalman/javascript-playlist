@@ -1257,7 +1257,7 @@ console.log(location.href)
 console.log(location.hostname)
 console.log(location.pathname)
 //location.reload()
-*/
+
 
 
 //dialog boxes
@@ -1281,3 +1281,9 @@ button.addEventListener("click",function(){
 })
 
 
+
+//History API & Manipulating Browser History
+
+//console.log(history.length)
+history.pushState({page:1},"page1","page1")
+*/
