@@ -1286,4 +1286,14 @@ button.addEventListener("click",function(){
 
 //console.log(history.length)
 history.pushState({page:1},"page1","page1")
+
+
+Q3
+let name=prompt("tell me your name: ")
+
+alert("welcome to the page !"+name)
+
+setInterval(() => {
+  console.log("hello!")
+}, 2000);
 */
