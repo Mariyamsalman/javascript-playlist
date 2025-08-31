@@ -1296,4 +1296,30 @@ alert("welcome to the page !"+name)
 setInterval(() => {
   console.log("hello!")
 }, 2000);
+
+//array map method()
+let a=[1,2,3,4,5]
+let b=a.map(function(currentvalue){
+  return currentvalue*currentvalue
+})
+console.log(b)
+
+
+let fruits=["apple","banana","mango"]
+let fruitschanged=fruits.map(function(currentvalue){
+  return currentvalue.toUpperCase()
+})
+
+console.log(fruitschanged)
+console.log(fruits)
+
+let info=[
+  {id:1,name:"mariyam"},
+  {id:2,name:"omaima"}
+]
+
+let name=info.map(function(value){
+return value.name
+})
+console.log(name)
 */
