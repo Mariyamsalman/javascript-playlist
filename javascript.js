@@ -1323,3 +1323,29 @@ return value.name
 })
 console.log(name)
 */
+//array filter method()
+
+let array=[1,2,3,4,5,6,7,8,9,10]
+let newarray=array.filter(function(value){
+return value%2==0
+})
+
+console.log(newarray)
+
+let array1=[21,32,3,5,11,7]
+let newarray1=array1.filter(function(value){
+  return value>10
+})
+console.log(newarray1)
+
+
+let info=[
+  {user:"mariyam",status:1},//1=online,0=offline
+  {user:"omaima",status:0},
+{user:"sufiyan",status:0},
+]
+let onlineuser=info.filter(function(value){
+  return value.status==1
+
+})
+console.log(onlineuser)
