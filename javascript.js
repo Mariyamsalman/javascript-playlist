@@ -1322,7 +1322,7 @@ let name=info.map(function(value){
 return value.name
 })
 console.log(name)
-*/
+
 //array filter method()
 
 let array=[1,2,3,4,5,6,7,8,9,10]
@@ -1349,3 +1349,32 @@ let onlineuser=info.filter(function(value){
 
 })
 console.log(onlineuser)
+*/
+
+//array reduce() method
+//sum
+let arr=[1,2,3,4]
+let sum=arr.reduce((acc,curr)=>acc+curr,0)//acc=0,curr=1
+console.log(sum)
+
+
+//max
+let arr1=[1,2,3,4]
+let max=arr1.reduce((acc,curr)=>acc>curr?acc:curr)
+console.log(max)
+
+//flattening array
+
+let array=[1,2,[3,4],5]
+let flat=array.reduce((acc,curr)=>acc.concat(curr),[])//acc=[],cur=1=>acc=[1]
+console.log(flat)
+
+//q2
+let words = ["cat", "elephant", "dog", "giraffe", "cow"]; 
+let filter=words.filter((value)=>value.length>5)
+console.log(filter)
+
+//q3
+let nums = [2, 3, 4];
+let product=nums.reduce((acc,curr)=>acc*curr,1)
+console.log(product)
