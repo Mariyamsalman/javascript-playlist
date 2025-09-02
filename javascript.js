@@ -1349,7 +1349,7 @@ let onlineuser=info.filter(function(value){
 
 })
 console.log(onlineuser)
-*/
+
 
 //array reduce() method
 //sum
@@ -1378,3 +1378,42 @@ console.log(filter)
 let nums = [2, 3, 4];
 let product=nums.reduce((acc,curr)=>acc*curr,1)
 console.log(product)
+
+
+
+//Fetch API in JavaScript (GET & POST Requests) 
+
+//get request
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+.then(res=>res.json())
+.then(data=>console.log("data received:",data))
+.catch(err=>console.log("error caught:",err))
+
+//post request
+
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"  
+  },
+  body: JSON.stringify({
+    title: "Hello World",
+    body: "This is a POST request example",
+    userId: 1
+  })
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log("POST Response:", data);
+  })
+  .catch(error => {
+    console.error("Error:", error);
+  });
+
+*/
+
+
+
+
+
+
