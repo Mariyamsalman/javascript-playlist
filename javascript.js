@@ -1,4 +1,8 @@
+
+
+
 /*
+
 ---function for external js----
 function info(){
  alert('this button is clicked')   
@@ -1410,10 +1414,20 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
     console.error("Error:", error);
   });
 
+
+
+//JSON.parse
+let jsonstring=`{"name":"Mariyam","age":18}`
+let obj=JSON.parse(jsonstring)
+console.log(obj.age)
+
+//JSON.string
+let jsobj={
+  name:"mariyam",
+  age:18
+}
+let string=JSON.stringify(jsobj)
+console.log(string)
+
+
 */
-
-
-
-
-
-
