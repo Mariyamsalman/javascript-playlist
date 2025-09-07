@@ -1429,5 +1429,35 @@ let jsobj={
 let string=JSON.stringify(jsobj)
 console.log(string)
 
+//sessionstorage vs localstorage
+//setitem
+
+localStorage.setItem("name","omaima")
+sessionStorage.setItem("name","mariyam")
+
+//getitem
+console.log(localStorage.getItem("name"))
+
+//removeitem
+sessionStorage.removeItem("name")
+
+//clear
+
+localStorage.clear()
+
+let object={
+  name:"mariyam",
+  age:18
+}
+localStorage.setItem("object",JSON.stringify(object))
+let obj=JSON.parse(localStorage.getItem("object"))
+console.log(obj.age)
+
+//q2
+let student = { name: "Ali", age: 20 };
+
+let string=JSON.stringify(student)
+console.log(JSON.parse(string))
+
 
 */
